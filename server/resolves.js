@@ -10,7 +10,7 @@ const resolvers={
             try{
             const{name,email,password}=input;
             if(!name || !email || !password){
-                throw new Error('Enter all the fields')
+                throw new Error('Entter all the fields')
             }
             const newUser=new User({name,email,password});
             return await newUser.save();
@@ -32,6 +32,6 @@ const resolvers={
     User:{
         email:(parent)=>parent.email || '',
         name:(parent)=>parent.name || '',
-        password:(parent)=>parent.password || ''
-    }
+        password:(parent)=>parent.password || ''
+    }
 }

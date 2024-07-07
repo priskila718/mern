@@ -12,10 +12,9 @@ email:String,
 password:String
 }
 type Query{
-getUsers:[User]
-}
+getUsers:[User]}
 type Mutation{
 createUser(input:createUserInput!):User
-changePass(id:ID!,password:String!):User
+changePss(id:ID!,password:String!):User
 }`;
 module.exports=typeDefs;

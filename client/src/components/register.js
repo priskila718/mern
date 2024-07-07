@@ -73,7 +73,6 @@ export default function Register() {
       </div>
       <button type="submit" className="bg-white text-blue-500 p-2 rounded-md mt-4">Submit</button>
       <h1>{res}</h1>
-    </form>
-  );
+    </form>
+  );
 }
-
